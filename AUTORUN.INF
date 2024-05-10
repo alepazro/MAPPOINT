@@ -1,0 +1,33 @@
+[autorun]
+open=dvdrun.exe
+icon=dvdrun.exe,0
+
+shell\launchMP\command=Setup.exe
+shell\launchMP=&Install MapPoint North America
+
+shell\readit\command=dvdrun.exe VIEW=readme.htm
+shell\readit=&View Read Me
+
+IDS_LOC_SETUPEXE=Setup.exe
+IDS_LOC_NAME=Microsoft MapPoint
+IDS_LOC_TRIALOVERRETAIL=Setup has detected an existing version of Microsoft MapPoint North America. You cannot install the trial version on a computer that already has the full version installed.
+IDS_LOC_RETAILONTRIAL=Setup has detected an exsting trial version of Microsoft MapPoint North America. Please uninstall the trial version and then install the retail version.
+
+
+[Product]
+
+;Valid Versions are
+;1 = Trial
+;2 = Retail
+ReleaseVersion=2
+
+;Valid Product Types are
+;1 = MapPoint USA
+;2 = MapPoint ENZ
+;3 = Streets and Trips
+;4 = Auto Route Express
+ProductType=1
+
+;This is the Window name used to determine if the Application is running
+;It must match the window title.
+WindowName=Microsoft MapPoint 2013 NA
